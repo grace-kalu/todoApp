@@ -7,7 +7,7 @@ public class Task {
     private int id;
     private String title;
     private String description;
-    private Progress status;
+    private Status status;
     private Date createdAt;
     private Date updatedAt;
     private Date completedAt;
@@ -16,7 +16,7 @@ public class Task {
         this.id = ++idCounter;
         this.title = title;
         this.description = description;
-        this.status = new Progress();
+        this.status = new Status();
         this.createdAt = new Date();
         this.updatedAt = new Date();
         this.completedAt = new Date();
@@ -46,11 +46,11 @@ public class Task {
         this.description = description;
     }
 
-    public Progress getStatus() {
+    public Status getStatus() {
         return status;
     }
 
-    public void setStatus(Progress status) {
+    public void setStatus(Status status) {
         this.status = status;
     }
 
